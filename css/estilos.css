@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+/* the actual timeline (vertical) */
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
